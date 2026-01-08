@@ -3,9 +3,9 @@
 int main() {
     int a = 5, b = 10, temp;
 
-    temp = a;  // store value of a
-    a = b;     // assign b to a
-    b = temp;  // assign temp to b
+    temp = a;  
+    a = b;     
+    b = temp;  
 
     printf("After swapping:\n");
     printf("a = %d, b = %d", a, b);
