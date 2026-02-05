@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+// Function to calculate GCD using recursion (Subtraction Method)
+int gcd(int a, int b) {
+    // Base case: when both numbers are equal, that is the GCD
+    if (a == b)
+        return a;
+    
+    // Recursive case: subtract the smaller number from the larger
+    if (a > b)
+        return gcd(a - b, b);
+    else
+        return gcd(a, b - a);
+}
+
+    int a, b;
+    
+    // Taking input from the user
+    printf("enter two number: ");
+    scanf("%d %d", &a, &b);
+
+    // Calling the gcd function and displaying the result
+    printf("The GCD of %d and %d is: %d\n", a, b, gcd(a, b));
+    
+    return 0;
+}
